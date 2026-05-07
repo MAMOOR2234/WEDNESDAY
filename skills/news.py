@@ -47,6 +47,12 @@ class Skill(BaseSkill):
             for i, h in enumerate(headlines, 1):
                 result += f"{i}. {h}\n"
             return result.strip()
+        
+        def _parse_date(self, date_str):
+            try:
+                return self.datetime.strptime(date_str, "%a, %d %b %Y %H:%M:%S %z")
+            except ValueError:
+                return "error parsing date"
 
         except Exception as e:
             return f"News fetch failed: {e}"

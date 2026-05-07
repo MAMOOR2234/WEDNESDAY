@@ -24,6 +24,12 @@ class Skill(BaseSkill):
         "excel": "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE",
         "notepad": "C:\\Windows\\System32\\notepad.exe",
         "calculator": "C:\\Windows\\System32\\calc.exe",
+        "paint": "C:\\Windows\\System32\\mspaint.exe",
+        "outlook": "C:\\Program Files\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE",
+        "onenote": "C:\\Program Files\\Microsoft Office\\root\\Office16\\ONENOTE.EXE",
+        "powerpoint": "C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE",
+        "gmail": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+        
     }
 
     def execute(self, args):

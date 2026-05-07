@@ -12,7 +12,8 @@ PyQt6>=6.0.0                # GUI Framework (JARVIS-style interface)
 # Choose one or both:
 faster-whisper>=0.10.0  # Faster local transcription (OpenAI Whisper)
 SpeechRecognition>=3.10.0  # Google Speech Recognition API
-pyaudio>=0.2.13  # Microphone input
+pyaudio>=0.2.13  # Microphone input (optional)
+sounddevice>=0.4.6  # Microphone input (easier install, used for clap detection)
 
 # Text-to-Speech
 # Choose one or both:
@@ -27,6 +28,9 @@ pyperclip>=1.8.2  # Clipboard operations
 python-dotenv>=1.0.0  # Environment variables
 requests>=2.28.0  # HTTP requests
 psutil>=5.9.0  # System monitoring (CPU, memory, disk)
+
+# Spotify integration
+spotipy>=2.23.0             # Spotify Web API client
 
 # Optional: For better performance and features
 numpy>=1.24.0  # Scientific computing (used by faster-whisper)

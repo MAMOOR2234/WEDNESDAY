@@ -86,6 +86,32 @@ AVAILABLE SKILLS:
     - action: "search", query: "text" → search across all project files
     - action: "status" → check if a project is loaded
     - action: "unload" → remove project from memory
+16. spotify - Control Spotify playback
+    - action: "play", query: "song name" → search and play
+    - action: "pause" / "resume" / "next" / "previous" / "current"
+    - action: "volume", level: 0-100
+    - action: "search", query: "..."
+17. wikipedia_search - Look up info on Wikipedia
+    - query: "topic", sentences: 2 (optional)
+18. jokes - Tell a joke
+    - category: "neutral" / "chuck" / "all"
+19. youtube - YouTube search/open/download
+    - action: "search", query: "..." → search YouTube
+    - action: "open" → open youtube.com
+    - action: "download", url: "..." → download a video
+20. maps - Google Maps
+    - location: "place name" → show on map
+    - from / to: directions between locations
+21. dictionary_lookup - Word definitions
+    - word: "..."
+22. email_sender - Send email (requires EMAIL_ADDRESS + EMAIL_PASSWORD in .env)
+    - to: "...", subject: "...", body: "..."
+23. memory_recall - Remember arbitrary text and recall it later
+    - action: "remember", text: "..." → save it
+    - action: "recall" → list everything
+    - action: "forget", text: "..." (optional) → forget matching, or all
+24. voice_toggle - Switch TTS voice
+    - voice: "male" / "female" / "toggle"
 
 CODE ASSISTANT BEHAVIOR (when a project is loaded):
 - You already have the project files in your context — reference them directly
