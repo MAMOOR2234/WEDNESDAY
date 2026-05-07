@@ -37,13 +37,14 @@ class Skill(BaseSkill):
 
         client_id = os.getenv("SPOTIFY_CLIENT_ID", "")
         client_secret = os.getenv("SPOTIFY_CLIENT_SECRET", "")
-        redirect_uri = os.getenv("SPOTIFY_REDIRECT_URI", "http://127.0.0.1:8888/callback")
+        redirect_uri = os.getenv("SPOTIFY_REDIRECT_URI", "http://localhost:127.0.0.1:8888/callback")
 
         if not client_id or client_id == "your_spotify_client_id_here":
             raise RuntimeError(
                 "Spotify not configured. Add SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET to .env. "
+                "and SPOTIFY_REDIRECT_URI to .env. "
                 "Create an app at https://developer.spotify.com/dashboard and set the redirect URI to "
-                "http://127.0.0.1:8888/callback (Spotify no longer accepts localhost)"
+                "http://localhost:127.0.0.1:8888/callback"
             )
 
         auth_manager = SpotifyOAuth(
